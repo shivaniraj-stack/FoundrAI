@@ -1,0 +1,291 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* Base Styles & Typography Override */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Inter', sans-serif;
+    background-color: #0B0F19;
+    color: #F3F4F6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+/* Authentication Page Styles */
+.auth-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.auth-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(135deg, #38BDF8 0%, #10B981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.05em;
+}
+
+.auth-title span {
+    font-weight: 400;
+}
+
+.auth-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #9CA3AF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-card {
+    background: rgba(31, 41, 55, 0.4);
+    border: 1px solid rgba(55, 65, 81, 0.5);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(56, 189, 248, 0.05) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 16px;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(8px);
+}
+
+.dashboard-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+.dashboard-subtitle {
+    color: #9CA3AF;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Custom Cards */
+.custom-card {
+    background: #1F2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    border-color: #10B981;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.card-body {
+    font-size: 0.9rem;
+    color: #9CA3AF;
+    line-height: 1.4;
+}
+
+/* Metric Cards Grid */
+.metric-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    flex: 1;
+    background: #111827;
+    border: 1px solid #1F2937;
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card-val {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #10B981;
+}
+
+.metric-card-label {
+    font-size: 0.85rem;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+
+/* Sidebar Branding */
+.sidebar-branding {
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #1F2937;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #38BDF8 0%, #10B981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.03em;
+}
+
+/* Footer Section */
+.footer-container {
+    background-color: #090D16;
+    border-top: 1px solid #1F2937;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #9CA3AF;
+    line-height: 1.5;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links-list a {
+    color: #9CA3AF;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links-list a:hover {
+    color: #10B981;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1F2937;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6B7280;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-badge-gemini {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status-badge-demo {
+    background-color: rgba(107, 114, 128, 0.1);
+    color: #9CA3AF;
+    border: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+/* Agent Progress Tracker */
+.agent-progress-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    background: rgba(31, 41, 55, 0.3);
+    border: 1px solid #374151;
+    margin-bottom: 0.5rem;
+}
+
+.agent-progress-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.agent-progress-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-running {
+    color: #38BDF8;
+}
+
+.status-completed {
+    color: #10B981;
+}
+
+.status-pending {
+    color: #6B7280;
+}
+
+.status-failed {
+    color: #EF4444;
+}
+
+/* Forms UI Fixes */
+div[data-testid="stForm"] {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Hide Streamlit elements for premium feel */
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+div[data-testid="stDecoration"] {display: none;}
